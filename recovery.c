@@ -769,6 +769,8 @@ main(int argc, char **argv) {
     {
         if (strstr(argv[0], "dedupe") != NULL)
             return dedupe_main(argc, argv);
+        if (strstr(argv[0], "droidboot") != NULL)
+            return droidboot_main(argc, argv);
         if (strstr(argv[0], "flash_image") != NULL)
             return flash_image_main(argc, argv);
         if (strstr(argv[0], "volume") != NULL)
